@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOGYM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fotos/logomarca.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">W O G Y M</div>
+
+            <ul class="nav-links">
+                <!--<a class="compra-icon" href="carrinho.html">
+                    <img src="fotos/compra.png" alt="Ícone de Compra">
+                </a>-->
+                <li><a href="produtos.html">PRODUCTOS</a></li>
+                <li><a href="home.html">INICIO</a></li>
+            </ul>
+
+            <!-- Ícone de Hambúrguer -->
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+        <div class="hero">
+            <h1>¡Bienvenido a nuestra tienda!</h1>
+            <p>Tenemos productos para todos los tipos de <b>GYMGIRL</b></p>
+        </div>
+    </header>
+
+    <section id="carrossel">
+        <h2 id="texto"><b>☆ NUESTROS PRODUCTOS TENDENCIA ☆</b></h2>
+        <div class="carrossel-container">
+            <div class="carrossel-item"><img src="fotos/produto1.png" alt="Producto 1"></div>
+            <div class="carrossel-item"><img src="fotos/produto2.png" alt="Producto 2"></div>
+            <div class="carrossel-item"><img src="fotos/produto3.png" alt="Producto 3"></div>
+            <div class="carrossel-item"><img src="fotos/produto4.png" alt="Producto 4"></div>
+            <div class="carrossel-item"><img src="fotos/produto5.png" alt="Producto 5"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <section id="servicos">
+
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar...">
+        </div>
+        <h2></h2>
+
+        <div class="produtos-container">
+            <div class="produto-item">
+                <img src="fotos/produto6.png" alt="Produto 1">
+                <h3>Top Fitness</h3>
+                <p>Confort y cool.</p>
+                <p><b>S/ 99,90</b></p>
+                <button class="btn-add-cart" data-produto-id="1">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto7.png" alt="Produto 2">
+                <h3> Pantalon Legging</h3>
+                <p>Flexibles y transpirables.</p>
+                <p><b>S/ 89,90</b></p>
+                <button class="btn-add-cart" data-produto-id="2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto8.png" alt="Produto 3">
+                <h3>Tennis Running</h3>
+                <p>Ligeras y con excelente amortiguación.</p>
+                <p><b>S/ 249,90</b></p>
+                <button class="btn-add-cart" data-produto-id="3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto9.png" alt="Produto 4">
+                <h3>Hoddie Femenino</h3>
+                <p>Ideal para los días más fríos.</p>
+                <p><b>S/ 139,90</b></p>
+                <button class="btn-add-cart" data-produto-id="4">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto10.png" alt="Produto 5">
+                <h3>Funda para celular fitness</h3>
+                <p>Protección con estilo.</p>
+                <p><b>S/ 49,90</b></p>
+                <button class="btn-add-cart" data-produto-id="5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto11.png" alt="Produto 6">
+                <h3>Guantes de Entrenamiento</h3>
+                <p>Para mejor agarre y protección.</p>
+                <p><b>S/ 29,90</b></p>
+                <button class="btn-add-cart" data-produto-id="6">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto12.png" alt="Produto 7">
+                <h3>Botella de Agua Fitness</h3>
+                <p>Hidrátate en todo momento.</p>
+                <p><b>S/ 39,90</b></p>
+                <button class="btn-add-cart" data-produto-id="7">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto13.png" alt="Produto 8">
+                <h3>Reloj Deportivo</h3>
+                <p>Monitoreo de actividad física.</p>
+                <p><b>S/ 299,90</b></p>
+                <button class="btn-add-cart" data-produto-id="8">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto14.png" alt="Produto 9">
+                <h3>Mat de Yoga Antideslizante</h3>
+                <p>Ideal para entrenamientos en suelo.</p>
+                <p><b>S/ 79,90</b></p>
+                <button class="btn-add-cart" data-produto-id="9">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="fotos/produto15.png" alt="Produto 10">
+                <h3>Bolso Deportivo</h3>
+                <p>Espacioso y resistente.</p>
+                <p><b>S/ 159,90</b></p>
+                <button class="btn-add-cart" data-produto-id="10">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <section id="carrinho">
+            <h2>Carrito de Compras</h2>
+            <div id="carrinho-container">
+                <p>El carrito está vacío.</p>
+            </div>
+            <div id="total-container">
+                <p><strong>Total:</strong> S/ <span id="total-valor">0.00</span></p>
+                <button id="finalizar-compra" class="btn-primary">Finalizar Compra</button>
+            </div>
+        </section>
+
+        <!-- Janela de Finalização de Compra com Formulário -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>¡Efectuando la Compra!</h2>
+
+                <!-- Formulário para coleta de dados -->
+                <form id="formulario-compra">
+                    <div>
+                        <label for="nome">Nombre Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="Correo">Correo:</label>
+                        <input type="text" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="telefone">Teléfone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    <div>
+                        <label for="endereco">Dirección:</label>
+                        <textarea id="endereco" name="endereco" required></textarea>
+                    </div>
+                    <h3>Forma de Pagamento</h3>
+                    <div>
+                        <label for="forma-pagamento">Elija una forma de pago:</label>
+                        <select id="forma-pagamento" name="forma-pagamento" required>
+                            <option value="Efectivo">Efectivo</option>
+                            <option value="credito">Tarjeta de Crédito</option>
+                            <option value="debito">Tarjeta de Débito</option>
+                            <option value="boleto">Boleto Bancario</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="btn-confirmar-compra" class="btn-primary">Confirmar Compra</button>
+                </form>
+
+                <!-- Resumo da compra, que vai aparecer após o envio do formulário -->
+                <div id="resumo-compra" style="display:none;">
+                    <h3>Resumen de la Compra</h3>
+                    <div id="modal-items">
+                        <!-- Os itens comprados serão listados aqui -->
+                    </div>
+                    <p><strong>Total:</strong> S/ <span id="modal-total">0.00</span></p>
+                    <p>¡Gracias por comprar con nosotros!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="imagem-flutuante">
+            <img src="fotos/logomarca.png" alt="Imagen Flotante" id="logo">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#sobre">Sobre Nosotros</a></li>
+                    <li><a href="#servicos">Planes</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Políticas Legales</h3>
+                <ul>
+                    <li><a href="#privacidade">Política de Privacidad</a></li>
+                    <li><a href="#termos">Términos de Uso</a></li>
+                    <li><a href="#cookies">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Ejemplo, 123, Ciudad, País</p>
+                <p>Teléfono: (11) 1234-5678</p>
+                <p>Email: wogym@wogym.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wogym. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://www.instagram.com/" class="instagram-float" target="_blank">
+        <img src="fotos/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank">
+        <img src="fotos/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script>
+        let carrinho = []; // Deve ser um array inicializado no escopo global
+
+        // Carrossel
+        let slideIndex = 0;
+        function moveSlide(n) {
+            const slides = document.querySelectorAll('.carrossel-item');
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            document.querySelector('.carrossel-container').style.transform = `translateX(${-slideIndex * 95}%)`;
+        }
+        setInterval(() => moveSlide(1), 5000);
+
+        // Pesquisa com Enter e Escape
+        document.getElementById("searchInput").addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                searchProduct();
+            } else if (event.key === "Escape") {
+                event.target.value = "";
+                clearSearchResults();
+            }
+        });
+
+        // Pesquisa de produtos
+        function searchProduct() {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const products = document.querySelectorAll(".produto-item");
+
+            products.forEach(product => {
+                const productName = product.querySelector("h3").textContent.toLowerCase();
+                product.style.display = productName.includes(searchInput) ? "block" : "none";
+            });
+        }
+
+        // Limpa resultados da pesquisa
+        function clearSearchResults() {
+            document.querySelectorAll(".produto-item").forEach(product => {
+                product.style.display = "block";
+            });
+        }
+
+        // Atualiza pesquisa em tempo real
+        document.getElementById("searchInput").addEventListener("keyup", searchProduct);
+
+        // Carrinho de compras
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".btn-add-cart").forEach(button => {
+                button.addEventListener("click", (event) => {
+                    const produto = event.target.parentElement;
+                    const produtoId = event.target.getAttribute("data-produto-id");
+                    const produtoNome = produto.querySelector("h3").textContent;
+                    const produtoPreco = parseFloat(produto.querySelector("b").textContent.replace("S/", "").trim());
+                    adicionarAoCarrinho(produtoId, produtoNome, produtoPreco);
+                });
+            });
+
+            // Função para adicionar produto ao carrinho
+            function adicionarAoCarrinho(produtoId, produtoNome, produtoPreco) {
+                const produtoExistente = carrinho.find(item => item.id === produtoId);
+                if (produtoExistente) { // Se já existe, adiciona mais
+                    produtoExistente.quantidade++;
+                } else { // Cria um novo item no carrinho
+                    carrinho.push({ id: produtoId, nome: produtoNome, preco: produtoPreco, quantidade: 1 });
+                }
+                atualizarCarrinho();
+            }
+
+            // Atualiza o carrinho
+            function atualizarCarrinho() {
+                const carrinhoContainer = document.getElementById("carrinho-container");
+                const totalContainer = document.getElementById("total-valor");
+                carrinhoContainer.innerHTML = "";
+                if (carrinho.length === 0) {
+                    carrinhoContainer.innerHTML = "<p>O carrinho está vazio.</p>";
+                    totalContainer.textContent = "0.00";
+                    return;
+                }
+                let total = 0;
+                carrinho.forEach(item => {
+                    const itemElement = document.createElement("div");
+                    itemElement.classList.add("carrinho-item");
+                    itemElement.innerHTML = `
+                        <p>${item.nome} - S/ ${item.preco.toFixed(2)} x ${item.quantidade}</p>
+                        <button class="btn-remove" data-produto-id="${item.id}">Remover</button>
+                    `;
+                    carrinhoContainer.appendChild(itemElement);
+                    total += item.preco * item.quantidade;
+                });
+
+                totalContainer.textContent = total.toFixed(2);
+                // Botão de remover do carrinho
+                document.querySelectorAll(".btn-remove").forEach(button => {
+                    button.addEventListener("click", (event) => {
+                        removerDoCarrinho(event.target.getAttribute("data-produto-id"));
+                    });
+                });
+            }
+
+            // Função para remover item do carrinho
+            function removerDoCarrinho(produtoId) {
+                const produtoIndex = carrinho.findIndex(item => item.id === produtoId);
+                if (produtoIndex > -1) {
+                    carrinho[produtoIndex].quantidade--;
+                    if (carrinho[produtoIndex].quantidade === 0) carrinho.splice(produtoIndex, 1);
+                    atualizarCarrinho();
+                }
+            }
+        });
+
+        // Finalização da compra
+        const finalizarCompraBtn = document.getElementById('finalizar-compra');
+        const modal = document.getElementById('modal');
+        const closeModal = document.querySelector('.close');
+        const formularioCompra = document.getElementById('formulario-compra');
+        const resumoCompra = document.getElementById('resumo-compra');
+        const modalItemsContainer = document.getElementById('modal-items');
+        const modalTotal = document.getElementById('modal-total');
+        const btnConfirmarCompra = document.getElementById('btn-confirmar-compra');
+
+        finalizarCompraBtn.addEventListener('click', () => {
+            // Exibe os detalhes da compra e o formulário
+            modal.style.display = 'block';
+
+            // Exibe o resumo da compra
+            modalItemsContainer.innerHTML = ''; // Limpa conteúdo anterior do modal
+            let total = 0;
+
+            // Adiciona os itens do carrinho no modal
+            carrinho.forEach(item => {
+                const itemElement = document.createElement('p');
+                itemElement.textContent = `${item.nome} - S/ ${item.preco.toFixed(2)} x ${item.quantidade}`;
+                modalItemsContainer.appendChild(itemElement);
+                total += item.preco * item.quantidade;
+            });
+
+            // Atualiza o total no modal
+            modalTotal.textContent = total.toFixed(2);
+        });
+
+        // Evento de fechar o modal (clicando no 'X')
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            location.reload(); // Opcional, recarrega a página após fechar o modal
+        });
+
+        // Fecha o modal ao clicar fora dele
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                location.reload(); // Opcional, recarrega a página após fechar o modal
+            }
+        });
+
+        // Envio do formulário de compra
+        formularioCompra.addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio tradicional do formulário
+
+            // Coleta os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const correo = document.getElementById('correo').value;
+            const telefone = document.getElementById('telefone').value;
+            const endereco = document.getElementById('endereco').value;
+            const formaPagamento = document.getElementById('forma-pagamento').value;
+
+            // Mostra o resumo da compra
+            formularioCompra.style.display = 'none';  // Esconde o formulário
+            resumoCompra.style.display = 'block';    // Exibe o resumo da compra
+
+            // Exibe os dados do usuário no modal
+            const userData = `
+        <p><strong>Nombre:</strong> ${nome} </p>
+        <p><strong>Correo:</strong> ${correo} </p>
+        <p><strong>Teléfone:</strong> ${telefone}</p>
+        <p><strong>Dirección:</strong> ${endereco}</p>
+        <p><strong>Forma de pago:</strong> ${formaPagamento}</p>
+    `;
+            modalItemsContainer.innerHTML = userData;
+
+            // Simulando uma confirmação de compra
+            setTimeout(() => {
+                alert("¡Compra realizada con éxito! Se ha enviado un correo electrónico de confirmación.");
+            }, 1000);
+
+            // Fecha o modal e recarrega a página
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+                location.reload();
+            });
+
+            // Fecha o modal ao clicar fora dele e recarrega a página
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    location.reload();
+                }
+            });
+        });
+        // Seleciona o menu de hambúrguer e a lista de navegação
+        const hamburger = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Adiciona um evento de clique no hambúrguer
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Adiciona/Remove a classe 'active' para mostrar/ocultar o menu
+        });
+
+    </script>
+
+</body>
+
+</html>

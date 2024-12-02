@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOGYM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fotos/logomarca.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">W O G Y M</div>
+
+            <ul class="nav-links">
+                <!--<a class="compra-icon" href="carrinho.html">
+                    <img src="fotos/compra.png" alt="Ícone de Compra">
+                </a>-->
+                <li><a href="produtos.html">PRODUCTOS</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#servicos">PLANES</a></li>
+            </ul>
+
+            <!-- Ícone de Hambúrguer -->
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Bienvenida a WOGYM</h1>
+            <p>¡La solución perfecta si buscas un ambiente hecho a la medida para ti!</p>
+            <a href="https://wa.me/5599999999999" class="btn-primary">Comece Agora</a>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2 id="texto">Sobre Nosotros</h2>
+        <p id="BIEN"></p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nuestros Planes</h2>
+
+        <div class="plano">
+            <h3>Plan Básico</h3>
+            <table>
+                <tr>
+                    <th>Beneficios</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <td>Acceso al gimnasio</td>
+                    <td>De lunes a viernes, de 6 a 22 horas</td>
+                </tr>
+                <tr>
+                    <td>Clases grupales</td>
+                    <td>3 veces por semana</td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>99,90 S/mes</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="plano">
+            <h3>Plan Intermedio</h3>
+            <table>
+                <tr>
+                    <th>Beneficios</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <td>Acceso al gimnasio</td>
+                    <td>Todos los días, de 6 a 22 horas</td>
+                </tr>
+                <tr>
+                    <td>Clases grupales</td>
+                    <td>5 veces por semana</td>
+                </tr>
+                <tr>
+                    <td>Acceso a la piscina</td>
+                    <td>Incluido</td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>149,90 S/mes</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="plano">
+            <h3>Plan Premium</h3>
+            <table>
+                <tr>
+                    <th>Beneficios</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <td>Acceso al gimnasio</td>
+                    <td>Todos los días, 24 horas</td>
+                </tr>
+                <tr>
+                    <td>Clases grupales</td>
+                    <td>Ilimitado</td>
+                </tr>
+                <tr>
+                    <td>Acceso a la piscina</td>
+                    <td>Incluido</td>
+                </tr>
+                <tr>
+                    <td>Entrenador personal</td>
+                    <td>2 veces por semana</td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>199,90 S/mes</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>ㅤ</p>
+        <div class="imagem-flutuante">
+            <img src="fotos/logomarca.png" alt="Imagem Flutuante" id="logo">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#sobre">Sobre Nosotros</a></li>
+                    <li><a href="#servicos">Planes</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Políticas Legales</h3>
+                <ul>
+                    <li><a href="#privacidade">Política de Privacidad</a></li>
+                    <li><a href="#termos">Términos de Uso</a></li>
+                    <li><a href="#cookies">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Ejemplo, 123, Ciudad, País</p>
+                <p>Teléfono: (11) 1234-5678</p>
+                <p>Email: wogym@wogym.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wogym. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const texto = "Bienvenida a WOGYM, un gimnasio diseñado para el bienestar y empoderamiento femenino. Ofrecemos un ambiente seguro y acogedor, con equipos modernos adaptados a las necesidades de cada mujer. Contamos con profesionales altamente calificados, listos para apoyar tanto a principiantes como a atletas experimentadas. Nuestra misión es ayudarte a alcanzar tus metas de manera saludable y eficiente, respetando tu ritmo y particularidades. ¡Únete y experimenta la diferencia de entrenar en un lugar donde tú eres la prioridad!";
+        const elementoP = document.querySelector("#sobre #BIEN");
+        const velocidade = 1;
+
+        function digitarTexto(texto, elemento, velocidade) {
+            let index = 0;
+
+            function digitar() {
+                if (index < texto.length) {
+                    elemento.textContent += texto.charAt(index);
+                    index++;
+                    setTimeout(digitar, velocidade);
+                }
+            }
+
+            digitar();
+        }
+
+        digitarTexto(texto, elementoP, velocidade);
+
+        // Seleciona o menu de hambúrguer e a lista de navegação
+        const hamburger = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Adiciona um evento de clique no hambúrguer
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Adiciona/Remove a classe 'active' para mostrar/ocultar o menu
+        });
+
+    </script>
+
+    <a href="https://www.instagram.com/" class="instagram-float" target="_blank">
+        <img src="fotos/instagram.png" alt="WhatsApp">
+    </a>
+
+    <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank">
+        <img src="fotos/whatsapp.png" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
